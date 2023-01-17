@@ -2,8 +2,9 @@
 
 This is a simple implementation of a multiple producers, single consumer queue in Go.
 
-It leverages `sync.WaitGroup` and `channel`s, and provides a queue for messages and a queue for errors.
-Producers are synchronized through `sync.WaitGroup`.
+It provides a queue for messages and a queue for errors, and simple helpers to manage synchronization.
+
+It leverages `sync.WaitGroup` and `channel`s. Producers are synchronized through `sync.WaitGroup`.
 Synchronization with the consumer happens through a dedicated `channel`.
 
 ## Usage
