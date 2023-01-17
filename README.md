@@ -44,3 +44,10 @@ func main() {
 	queue.WaitAndClose()
 }
 ```
+
+## Similarities
+
+Other packages do something similar, like:
+- [run](https://github.com/oklog/run)
+- [errgroup](https://pkg.go.dev/golang.org/x/sync/errgroup)
+- [tomb](https://pkg.go.dev/gopkg.in/tomb.v2)
